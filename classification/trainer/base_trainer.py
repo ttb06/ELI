@@ -65,7 +65,7 @@ class BaseTrainer(object):
         """The function to set the saving path."""
         timestamp = time.strftime("%m%d_%H%M%S")
         self.log_dir = './logs/'
-        self.model_dir = './model_checkpoints/' + str(timestamp)
+        self.model_dir = './content/drive/MyDrive/ELI_checkpoint/model_checkpoints/' + str(timestamp)
         if not osp.exists(self.log_dir):
             os.makedirs(self.log_dir)
         if not osp.exists(self.model_dir):
